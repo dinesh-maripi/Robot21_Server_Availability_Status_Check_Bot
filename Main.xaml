@@ -1,0 +1,344 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="639,1762" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="51">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence: Main" sap:VirtualizedContainerService.HintSize="625,1697" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="InputDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[InputDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="583,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\input.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: https://botsdna.com/ServerAvailability/" sap:VirtualizedContainerService.HintSize="583,1478" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="c455e5f5-28d8-417e-95aa-68d1b1b711df" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="549,1261" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="Index" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Index]" DataTable="[InputDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="507,1167" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,1050" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Username" />
+                      <Variable x:TypeArguments="x:String" Name="Password" />
+                      <Variable x:TypeArguments="x:String" Name="Server" />
+                      <Variable x:TypeArguments="x:String" Name="Status" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,193" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[Username]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[Password]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[Server]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString+"-"+CurrentRow(3).ToString.Replace(".", "-")]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into: Username" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="431,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c455e5f5-28d8-417e-95aa-68d1b1b711df" Text="[Username]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/ServerAvailability/" DesignTimeRectangle="664, 328, 177, 21" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="9ecc99af-fc7e-4f1b-b439-179035783426" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAZCAYAAAB3jW88AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVHhe7dLBCYAwAARBq077ET+SiA1kmYF73XevCTGiJmeLeoxhduRWb9TfA06y9itqEkRNjqjJETU5oiZH1OSImhxRkyNqckRNjqjJETU5oiZH1OSImhxRkyNqckRNzm/Uj+cwO3GrLWooEDUxc96Z+wJd0ibQxQAAAABJRU5ErkJggg==" InformativeScreenshot="72e8c60832a32548a62531fab24ec291.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/ServerAvailability/' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="595, 327, 67, 23" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Username' check:innerText='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAbCAYAAAAu/JKTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGsSURBVFhH7ZVBjsMgDEVzxki9yyxHEVdJjkIP0kWP4THYgHGCK5Fdx09CSkOA7xdIF3CGuBwDl2PgcgxcjoHLMXA5Bk3OM8CyLKIFiNwF8Ib9IfoeO975ftTOiRCw+PUYlI4Ch31fiJJDO8SSE558/Q9wOQa35LyPlb5BW8TrAPuLO5Dap79R+du2wo7Pt752nNs4fEbMFzeei1vLwd9DzEBzi/7XDiv/1jUN8wnm5aSFy6SlYC4mLSznyIWp8Pk39WYx5T6NEwUn8rj2B5Hny2vzc2rOKrLL18YP8ynuycEAcicRfbGtcTglkjj/EVwHFjLq21Yikbwr5G7o1vyQT3DrWNU3lFoNlxbXxQsm5dBaNK4vfkaOkU+g5HAIObEgbteT5jBVEBV63lHMhBxd7H05Rj7BSQ5NdN49+k3mY6UDyWKUgHhw2Fk5dduzjGk5H/IJznIS4it/PjYMPhMeaZHyTH9m6Ri0lt8Ui6fWv8lyPwnqxqYiuzwrBNzBdP0Dv0lM6cOMVHi5h5ku1xzkU1zLcTIux8DlGLgcA5dj4HIMXI6ByzFwOUMA/gCP4sI1n9swBAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into: Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="431,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c455e5f5-28d8-417e-95aa-68d1b1b711df" Text="[Password]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/ServerAvailability/" DesignTimeRectangle="664, 359, 177, 21" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='password' tag='INPUT' class='' aaname='' /&gt;" Guid="112cd537-d094-4bd2-86ea-3fa9f33fa443" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAZCAYAAAB3jW88AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVHhe7dvBCYNAFEXRlGABdmmd1jThQ0Y0aNb5j3PgbRR3l1mNrwFhRE2cS9Tbto11XceyLGYtVr1Wt2dH1PXi7iOzDjuHfUQ9T+h93z9P4P9Vr9Vt9TsdUc/ioZvvdkVNe6ImjqiJI2riiJo4oiaOqIkjauKImjiiJo6oiSNq4oiaOKImzmPU7lPT0c/71P58sc67/fOl1It5Ypt1WPV6DrpcooYEoibMGG91cAbLmKT6mQAAAABJRU5ErkJggg==" InformativeScreenshot="552b62c670769a51e7dc32639eb0f254.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/ServerAvailability/' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="595, 358, 67, 23" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Password' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAbCAYAAAAu/JKTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVFhH7ZTbDcMgDEUzY6QsFLEKGYUO0o+OQW2wie0Cqtr8tPKVkBJetg8XluwayuFM5HAmcjgTOZyJHM5EDmeiE84t5GVZOm3N8U5z/kSPY83LFvOD/kcyznnkuC15PXhZ/f8nQAUMHvr3cED3mFfcbE/U8fu6yDmolMObpH9F18F5cQ7Bai1AD4vH8BrCt3Bb2ut83DvtuIavLM8/5/A8ua7FN2+jyrWMwV4HzWkARCzoS9e+OUsOt9pTkjWgZCF1Hq2TBdF3vfMnUL0fqBSogUfOx44RqBKfvkuT+4FUDDjssH0BpwWhxmCU2FHQ1Cn3gpbEB4/6oOAW8xZpnT24KhWzF6fkKWFP8jR6482xkm+QmS+A6SQ1dL1/3a85bte2TwcXoV3KUk7swLFORV34IEvZ8dF8AthxSzk1U2SzPcCNCKlAxrXiSlEsW5QqtOecEbBP4dg7e8qMk1O40LTLJBAQ/UOCFoYCWgoIOTSXEPQtdAqVa6XrQD04fFANBh/cK2irEw4FPpu2IqvalDeHghAWfgMwhLPyP7RWBMLBR7Cts0nVhCWw4emaPDUY7jeA1HUH4J85xyXlcCZyOBM5nIkczkQOZyKHM5HDmcjhDJXzE2Zd1d8ehgEqAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="431,52" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,879" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NSelectItem DisplayName="Select Item: Server" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[Server]" ScopeIdentifier="c455e5f5-28d8-417e-95aa-68d1b1b711df" Timeout="3" Version="V1">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="36">
+                                <x:String>----Select Server Name----</x:String>
+                                <x:String>TS-202-32-5</x:String>
+                                <x:String>BE-126-42-6</x:String>
+                                <x:String>VG-654-67-7</x:String>
+                                <x:String>TY-567-87-8</x:String>
+                                <x:String>HJ-876-43-9</x:String>
+                                <x:String>UY-343-34-4</x:String>
+                                <x:String>KL-212-32-3</x:String>
+                                <x:String>SA-123-12-2</x:String>
+                                <x:String>VB-876-76-8</x:String>
+                                <x:String>KL-765-54-3</x:String>
+                                <x:String>JK-876-76-7</x:String>
+                                <x:String>TY-432-87-2</x:String>
+                                <x:String>CF-765-65-8</x:String>
+                                <x:String>IO-659-65-8</x:String>
+                                <x:String>WQ-342-43-5</x:String>
+                                <x:String>ML-934-48-1</x:String>
+                                <x:String>TY-765-98-8</x:String>
+                                <x:String>GH-546-54-3</x:String>
+                                <x:String>FD-987-98-6</x:String>
+                                <x:String>MN-276-32-1</x:String>
+                                <x:String>ER-564-23-7</x:String>
+                                <x:String>PO-876-76-8</x:String>
+                                <x:String>AS-874-34-2</x:String>
+                                <x:String>BV-902-34-5</x:String>
+                                <x:String>LK-675-76-8</x:String>
+                                <x:String>WQ-345-54-3</x:String>
+                                <x:String>UI-874-54-3</x:String>
+                                <x:String>CX-546-98-2</x:String>
+                                <x:String>FG-234-32-1</x:String>
+                                <x:String>BL-765-87-8</x:String>
+                                <x:String>AL-453-45-4</x:String>
+                                <x:String>ED-764-67-5</x:String>
+                                <x:String>JF-909-04-5</x:String>
+                                <x:String>OI-387-43-4</x:String>
+                                <x:String>ML-876-87-9</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="https://botsdna.com/ServerAvailability/" DesignTimeRectangle="664, 384, 179, 19" ElementType="DropDown" FriendlyName="'----Select Server'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='' aaname='' /&gt;" Guid="95b0a7b6-f645-4edf-80db-b3ffc3fa6550" InformativeScreenshot="691c53cf038d4fa21d93c02949b5c6f1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/ServerAvailability/' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="595, 383, 67, 21" ElementType="Text" FriendlyName="'Server'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Server' check:innerText='Server' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAZCAYAAABjNDOYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFsSURBVFhH7ZbbDcMgDEUzY6QsFLFCRyCjkEH60TFcHhcwEPyZRqqPRNUAaeH04nQhZYrKEVA5AipHQOUIqByBUc5paFkWNEOOPmR361//j1bO29LqpZgT116NCZI2lUOfY70QoclJ4EjV5Pw3Xc3xKdl4vZkw1CUQ+1eyB8a3F73K5y20Hil/MaFxPCeSf2+dV/p9cvP4nT/cWJA9bq8LHY5ZELBXbeUocmFsPBDndH3uzNdBgBf6xiXqnDm5MD5+H5dyElcpan/h2rD4nJxhI2HDPInOy8HbJoWsRZk5Oa3Yu+hqjo9vvzEsPkU9LXYa7amclMZ6rGwVFe6ZPg0fJcew855JC+RyxjlAkJPGQnqcr0ns/tJ/xcPk1JSAfsOYw9NTktDPbYDYzXTjENCkJwt8lJx0rMrTJLZxs+04ZELa7J5AKd64ruDPZmkhSRCT+34gSCjIisoRUDkCKkdA5QioHAGVI6ByphB9AW4UY7LP1UgAAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NClick ClickType="Single" DisplayName="Click: Start Server" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c455e5f5-28d8-417e-95aa-68d1b1b711df" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://botsdna.com/ServerAvailability/" DesignTimeRectangle="664, 407, 87, 21" ElementType="Button" FriendlyName="'Start Server'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='' aaname='Start Server' check:text='Start Server' /&gt;" Guid="6bb05b4e-8652-4dc9-b569-75631b71cb6f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAZCAYAAABeplL+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVGhD7Zm7jcMwDEC9oAGPclVwCLRGKt8AN4ODjJHCE6TMCDyT+pik6Avij5BCAl4RSZbIJ8op3EBtxVqVXbAl2Y/HAy6XC5xOp8qOoFN0iy3Jxs7b7QbP57OyI+gU3WJLsvEUrMmV7aBbbFV2AarsgqyXfXXQNM1M18NozTuI8aeV+58Hc94nsU42iW6hv899lDwTPpw3CLj30Kr1OV60g4H1bdqvEKtka7GeARwTdKRsc216Rh7Ap7FbZXPEFY9SSEboU9ce5bVn58e7b/hK8+w9rMq2oEN5uV8Pv/rw9GGL2HW/Axf2cdfQv8A62RMiESNxWX0j9B0LRiXj12Jr6GQz/Hppf+P/Qt4+P7/9GWks24+KZ/4tn8Uby2Lnc8MhxHVfsVr2jA9GJy1lK9TNyOa+lM0ICdP+S4eL4J4hvjw2KRTHhVxxmGztd+Kc2EF2xAcsqoclRL+jlK4VQW6SHQnSvSRWAAJfkbnsUM3Uh8+qKjfWojyPl21UDes3Zeug1O/3ZKMMa4xX51KMHku233OSjJXMx7LKZhwvO5622uS/VwMFNSdPY0tz0/zlJPzzc/UhPiZVkfq1tvgaQfwBZXmJQ5zguZSQTZBcDC4ik0/jPMEw111lAnnyMXGWpCK73kb18T15fLbs/IASQXBcK/0hFpNdeZsquyBVdkGq7IJksuuXmmMwv9TUb5DHgE6zb5C1Hd+q7GIN4A9fKfEpHT6c9wAAAABJRU5ErkJggg==" InformativeScreenshot="c3ddf6882616fc8ab4ad135155f503b3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/ServerAvailability/' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NGetText DisplayName="Get Text: Status" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c455e5f5-28d8-417e-95aa-68d1b1b711df" Version="V1">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://botsdna.com/ServerAvailability/" DesignTimeRectangle="16, 485, 1407, 94" FriendlyName="'TS-202-32-5Offline'" FullSelectorArgument="&lt;webctrl tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='' /&gt;" Guid="b9ceab82-81d1-4106-af24-9478c5656c72" ImageBase64="" InformativeScreenshot="1242303aea2870e818e980bed7206ac4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/ServerAvailability/' /&gt;" SearchSteps="Selector, FuzzySelector" Visibility="Interactive" />
+                            </uix:NGetText.Target>
+                            <uix:NGetText.Text>
+                              <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
+                            </uix:NGetText.Text>
+                          </uix:NGetText>
+                          <Assign DisplayName="Assign: Status" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[If(Status.Contains("Offline"), Status.Substring(Status.IndexOf("Offline")), Status.Substring(Status.IndexOf("Online")))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[Status]" />
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,358" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,288" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[exception.Message]" />
+                              <Assign DisplayName="Assign: Status" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">Server Not Found</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <ui:WriteCell Cell="[&quot;E&quot;+(index+2).ToString]" DisplayName="Write Cell: Status" sap:VirtualizedContainerService.HintSize="431,115" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[Status]" WorkbookPath="Data\input.xlsx" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1456, 876" BrowserType="Edge" IconBase64="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" InformativeScreenshot="fe4ff33be002afd8d425d3b4db1ded23.png" Selector="&lt;html app='msedge.exe' title='https://botsdna.com/ServerAvailability/' /&gt;" Url="https://botsdna.com/ServerAvailability/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
